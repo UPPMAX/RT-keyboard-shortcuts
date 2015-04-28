@@ -199,8 +199,8 @@ function ShortcutsSource() {
             code = [ e.which || e.keyCode];
             letter = String.fromCharCode(code).toLowerCase();
             if (e.shiftKey) { letter = letter.toUpperCase(); }
-            // IE hack to support "?"
-            if (window.ie && (code === 191) && e.shiftKey) {
+            // hack to support "?"
+            if (code == 191) {
                 letter = '?';
             }
             if (shortcutListener.process(letter)) { shortcutListener.stopEvent(e); }
@@ -265,6 +265,7 @@ function RTSource() {
         }
     }, SHORTCUTS = {
         '?': function() { RThelp(); },
+        'h': function() { RThelp(); },
         '/': function() { RTmatch_link(/Search\/Build\.html/); },
         '#': function() { RTgototicket(); },
         'a': function() { RTmatch_link(/Status=resolved/); },
