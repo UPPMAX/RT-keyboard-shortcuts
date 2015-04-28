@@ -57,12 +57,10 @@
 // @name            RT Keyboard Shortcuts
 // @description     Adds keyboard shortcuts to RT.
 // @namespace       https://reuteras.com/RT
-// @include         https://ticket.sys.kth.se/*
-// @include         https://rt.reuteras.com/*
-// @include         https://rt.cpan.org/*
+// @include         https://support.snic.se/*
 // @grant           none
-// @downloadURL     https://github.com/reuteras/RT-keyboard-shortcuts/raw/master/rtkeyboardshortcuts.user.js
-// @updateURL       https://github.com/reuteras/RT-keyboard-shortcuts/raw/master/rtkeyboardshortcuts.meta.js
+// @downloadURL     https://raw.githubusercontent.com/UPPMAX/RT-keyboard-shortcuts/master/rtkeyboardshortcuts.user.js
+// @updateURL       https://raw.githubusercontent.com/UPPMAX/RT-keyboard-shortcuts/master/rtkeyboardshortcuts.meta.js
 // @version         0.1.9
 // ==/UserScript==
 // CHANGEME
