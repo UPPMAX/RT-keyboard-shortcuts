@@ -518,9 +518,7 @@ function RTSource() {
  */
 var SupportedSites = {
     // CHANGEME
-    'kth.se':           RTSource,
-    'rt.reuteras.com':  RTSource,
-    'rt.cpan.org':      RTSource
+    'support.snic.se':           RTSource,
 };
 
 /*
@@ -531,6 +529,7 @@ var SupportedSites = {
  */
 var addScript = function(ShortcutsSource) {
     "use strict";
+
     var getSource = function (func) {
         var js = func.toString(), i = js.indexOf('{');
         js = js.substr(i + 1, js.length - i - 2);
