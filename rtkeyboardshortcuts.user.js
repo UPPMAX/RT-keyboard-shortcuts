@@ -403,7 +403,7 @@ function RTSource() {
             return false;
         }
         // Ugly replace, have to check if our last upgrade introduced a conf error CHANGEME
-        window.location = links[link].href.replace(/Ticket/, "/Ticket");
+        window.location = links[link].href.replace(/.*Ticket/, "/Ticket");
         return true;
     }
 
