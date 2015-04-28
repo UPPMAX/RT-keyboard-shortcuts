@@ -200,9 +200,14 @@ function ShortcutsSource() {
             letter = String.fromCharCode(code).toLowerCase();
             if (e.shiftKey) { letter = letter.toUpperCase(); }
             // hack to support "?"
-            if (code == 191) {
+            if (code == 191 && e.shiftKey) {
                 letter = '?';
             }
+
+            if (code == 51 && e.shiftKey) {
+                letter = '#';
+            }
+
             if (shortcutListener.process(letter)) { shortcutListener.stopEvent(e); }
         },
 
