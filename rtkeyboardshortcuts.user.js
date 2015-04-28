@@ -518,7 +518,7 @@ function RTSource() {
  */
 var SupportedSites = {
     // CHANGEME
-    'support.snic.se':           RTSource,
+    'support.snic.se':           RTSource
 };
 
 /*
