@@ -325,7 +325,7 @@ function RTSource() {
             's': function() { RTmatch_link(/Search\/Results\.html\?Format=/); }
         },
         'V': function() { window.alert(myVersion); return true; },
-	'1': function() { window.location = 'https://support.snic.se/'; },
+	'1': function() { RThome(); },
         // CHANGEME: This function requires that you have added a form to RT to move a ticket to a spam 
         // queue. I'll try to get the code or a pointer to it later...
         'x': function() { RTform_submit("quick-spam"); }
@@ -423,7 +423,7 @@ function RTSource() {
         event.returnValue = false;
         return false;
     }
-
+     
     // Match a part of a url and follow it
     function RTmatch_link_click(matchString) {
         var breakOn = [matchString || ""],
